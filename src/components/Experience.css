@@ -1,0 +1,229 @@
+.experience {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.timeline {
+  position: sticky;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.timeline-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(10px);
+}
+
+.timeline-item.active {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.3);
+  transform: translateX(15px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px currentColor;
+  transition: all 0.3s ease;
+}
+
+.timeline-item.active .timeline-dot {
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 30px currentColor;
+}
+
+.timeline-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.timeline-content .company {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.timeline-content .period {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.experience-details {
+  min-height: 500px;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 24px;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease;
+}
+
+.card-top {
+  padding: 40px;
+  background: rgba(99, 102, 241, 0.05);
+  border-top: 4px solid;
+  border-top-color: var(--primary);
+}
+
+.card-top h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.company-name {
+  color: var(--primary-light);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.separator {
+  color: var(--gray);
+}
+
+.location {
+  color: var(--gray);
+  font-size: 1.1rem;
+}
+
+.card-top .period {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.achievements {
+  padding: 40px;
+}
+
+.achievements h4 {
+  color: var(--white);
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.achievements ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  color: var(--light);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0;
+  animation: slideInLeft 0.5s ease forwards;
+  padding: 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+  background: rgba(99, 102, 241, 0.05);
+  transform: translateX(10px);
+}
+
+.check-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--primary-light);
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+@media (max-width: 968px) {
+  .experience-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .timeline {
+    position: relative;
+    top: 0;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+
+  .timeline-item {
+    min-width: 200px;
+  }
+
+  .timeline-item:hover,
+  .timeline-item.active {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-top,
+  .achievements {
+    padding: 25px 20px;
+  }
+
+  .card-top h3 {
+    font-size: 1.6rem;
+  }
+
+  .company-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .achievement-item {
+    font-size: 0.95rem;
+  }
+}

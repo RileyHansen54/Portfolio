@@ -1,0 +1,57 @@
+.contact {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
+  padding: 60px 0;
+}
+
+.contact-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 1.1rem;
+}
+
+.contact-line a {
+  color: var(--light);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.contact-line a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-light);
+  transition: width 0.3s ease;
+}
+
+.contact-line a:hover {
+  color: var(--white);
+}
+
+.contact-line a:hover::after {
+  width: 100%;
+}
+
+.separator {
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .contact-line {
+    font-size: 1rem;
+    gap: 12px;
+  }
+}
