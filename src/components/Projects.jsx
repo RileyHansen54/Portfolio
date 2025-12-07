@@ -34,6 +34,17 @@ const Projects = () => {
       ],
       tags: ['Python', 'Computer Vision', 'YOLO', 'TensorFlow'],
       gradient: 'linear-gradient(135deg, #ff4444 0%, #ff6b6b 100%)'
+    },
+    {
+      title: 'AI Tutor Webapp',
+      description: 'Implemented a speech-to-text and text-to-speech processing for conversational learning',
+      highlights: [
+        'Built a voice-enabled tutoring application using React, FastAPI, and speech recognition API’s',
+        'The webapp contains a pipeline starting from Google Chromes built in speech recognition, then to a grok text generation model, and finally to Dia-1.6b; a Text To Speech model from Nari labs. ',
+        'Hosted with Microsoft Azure'
+      ],
+      tags: ['Azure', 'OpenAI', 'Data Pipelines', 'Algorithms'],
+      gradient: 'linear-gradient(135deg, #ff4444 0%, #ff6b6b 100%)'
     }
   ]
 
