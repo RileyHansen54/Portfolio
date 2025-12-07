@@ -8,10 +8,10 @@ const Hero = () => {
   const [typingSpeed, setTypingSpeed] = useState(150)
 
   const titles = [
-    'Software Intern',
+    'Software Engineer Intern',
     'Full-Stack Intern',
     'Mathmatics Student',
-    'Open Source Enjoyer',
+    'Open Source Developer',
     'AI Supporter',
     'Python Master'
   ]
