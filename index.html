@@ -83,6 +83,16 @@
           <h2>Professional Experience</h2>
           <div class="experience-list">
             <div class="experience-item">
+              <h3>Software Engineer Intern</h3>
+              <p><strong>Terma Group</strong> &mdash; May 2025 – Present | Atlanta, GA</p>
+              <ul>
+                <li>Independently developed Terma Copilot, an internal chatbot for Terma Employees.</li>
+                <li>Worked with other interns to create an automated unit testing pipeline for embedded systems.</li>
+                <li>Pitched a business case to management for a $48,000 AI workstation and was added to Summers’ budget.</li>
+                <li>Accepted an internship extension at the end of August, currently training the LLM on internal data.</li>
+              </ul>
+            </div>
+            <div class="experience-item">
               <h3>Full-Stack Developer Intern</h3>
               <p><strong>CastlePoint Investments</strong> &mdash; May 2024 – Present | Atlanta, GA</p>
               <ul>
@@ -93,7 +103,7 @@
             </div>
             <div class="experience-item">
               <h3>IT Helpdesk Associate</h3>
-              <p><strong>University of Georgia</strong> &mdash; August 2023 – Present | Athens, GA</p>
+              <p><strong>University of Georgia</strong> &mdash; August 2023 – May 2025 | Athens, GA</p>
               <ul>
                 <li>Diagnosed and resolved hardware and software issues for desktop systems and over 75 types of devices, ensuring optimal performance for staff and students.</li>
                 <li>Utilized disk cloning and imaging software to facilitate efficient system setups, enabling quick deployment of EITS network configurations across multiple computers.</li>
@@ -115,28 +125,35 @@
         <div class="container">
           <h2>Projects</h2>
           <div class="project-list">
+            
+            <div class="project-item">
+              <h3>Terma Copilot</h3>
+              <p>On-premises AI Chatbot made with a React JS frontend, FastAPI backend, and LLM Triton Server.</p>
+              <ul>
+                <li>The LLM averages 120 words a second, and the FastAPI can handle over 290 connections at once.</li>
+                <li>Added a RAG-per-user file system with PostgreSQL and PGvector, which gives the AI access to user files.</li>
+                <li>Added tool calling and provided the LLM with Confluence, Bitbucket, and Jira-related tools via MCP. </li>
+
+              </ul>
+            </div>
+            
+            <div class="project-item">
+              <h3>Face Detection Model Performance Analysis</h3>
+              <p>Computer Vision Training/Analysis</p>
+              <ul>
+                <li>Trained face detection models and compared relevant metrics for each model. (YOLO, MCTNN, HCC)</li>
+                <li>The face detection models were trained on the WIDERFACE dataset with an 80/20 data split.</li>
+                <li>YOLO was the fastest, and it had an accuracy of 92%, compared to 87% for MCTNN and 89% for HCC</li>
+
+              </ul>
+            </div>
             <div class="project-item">
               <h3>S&P500 Web-Scraper</h3>
               <p>Used Node.js to recursively scrape S&P500 stock statistics from slickcharts.com.</p>
               <ul>
-                <li>Scrapes all 507 SPY stocks with a 6.5-second runtime.</li>
-                <li>Capable of scraping other stock indexes.</li>
+                <li>Used Node.js to scrape S&P500 stock statistics from slickcharts.com recursively. These metrics refresh every hour.</li>
+                <li>The metrics can be used in financial models to determine which stocks outperform others</li>
                 <li>Statistics can be used in financial models to determine stock performance.</li>
-              </ul>
-            </div>
-            <div class="project-item">
-              <h3>Cinema ++</h3>
-              <p>Created a movie website written solely in JavaScript, HTML/CSS.</p>
-              <ul>
-                <li>Users can create accounts, select seats, showtimes/dates, and update payment information.</li>
-                <li>Features booking capabilities with user accounts held in a PostgreSQL database.</li>
-              </ul>
-            </div>
-            <div class="project-item">
-              <h3>Tax-Bracket Calculator</h3>
-              <p>An iOS app created using Swift.</p>
-              <ul>
-                <li>Calculates the amount of earned income owed to the government.</li>
               </ul>
             </div>
             <div class="project-item">
@@ -163,8 +180,8 @@
       <div class="container">
         <p>&copy; 2023 Riley Hansen. All rights reserved.</p>
         <div class="social-links">
-          <a href="https://linkedin.com/RileyHansen" target="_blank">LinkedIn</a>
-          <a href="https://github.com/YourGitHubUsername" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/riley-hansen-b22971233/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/RileyHansen54/Portfolio" target="_blank">GitHub</a>
         </div>
       </div>
     </footer>
